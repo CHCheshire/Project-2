@@ -9,3 +9,36 @@ h1 {
     font-size: 18px;
     font-family: oxygen;
 }
+
+#games-section {
+    display:flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.games {
+    display:block;
+}
+
+
+.button1 {
+    width: 15%; 
+    height: 50px;
+    /* padding: 20px; */
+    margin-right: 50px;
+}
+
+.button2 {
+    width: 15%; 
+    height: 50px;
+    /* padding: 20px; */
+    margin-right: 50px;
+}
+
+.button3 {
+    width: 15%; 
+    height: 50px;
+    /* padding: 20px; */
+    margin-right: 50px;
+}
