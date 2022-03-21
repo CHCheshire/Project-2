@@ -18,27 +18,27 @@ h1 {
 }
 
 .games {
-    display:block;
+    display:inline-block;
+}
+
+.image {
+    height:400px;
+    width: 400px;
+    padding: 20px;
 }
 
 
 .button1 {
     width: 15%; 
     height: 50px;
-    /* padding: 20px; */
-    margin-right: 50px;
 }
 
 .button2 {
     width: 15%; 
     height: 50px;
-    /* padding: 20px; */
-    margin-right: 50px;
 }
 
 .button3 {
     width: 15%; 
     height: 50px;
-    /* padding: 20px; */
-    margin-right: 50px;
 }
