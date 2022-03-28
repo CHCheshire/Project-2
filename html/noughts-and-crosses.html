@@ -1,1 +1,47 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Noughts and Crosses</title>
+    <link rel="stylesheet" href="assets/css/noughts-and-crosses">
+</head>
+<body>
+    <h1>Noughts and Crosses</h1>
+
+    <form action="player-names">
+        <label for="p1name">Player 1 name:</label>
+        <input type="text" id="p1name" name="p1name">
+        <br>
+        <label for="p2name">Player 2 name:</label>
+        <input type="text" id="p2name" name="p2name">
+        <br>
+        <input type="submit" value="Submit">
+
+
+    </form>
+
+    <div class="message">
+        <h2>Player 1 starts</h2>
+    </div>
+
+    <div class="grid">
+        <div class="box" id="0"></div>
+        <div class="box" id="1"></div>
+        <div class="box" id="2"></div>
+        <div class="box" id="3"></div>
+        <div class="box" id="4"></div>
+        <div class="box" id="5"></div>
+        <div class="box" id="6"></div>
+        <div class="box" id="7"></div>
+        <div class="box" id="8"></div>
+
+    </div>
+    <button class="restart">Restart the game</button>
+</body>
+<footer>
+    <p>A website developed by Cameron Hughes-Cheshire</p>
+        <a href="https://www.linkedin.com/in/cameron-cheshire-478b9220a/">My LinkedIn profile</a>
+        <a href="https://github.com/CHCheshire">My Github repository</a>
+</footer>
+<script src="assets/js/noughts-and-crosses.js"></script>
+</html>
