@@ -54,7 +54,7 @@ h1 {
 @media (max-width: 1200px) {
     .image {
         height:300px;
-        width:200px;
+        width:300px;
     }
 }
 
