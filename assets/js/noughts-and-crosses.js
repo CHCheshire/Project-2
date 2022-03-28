@@ -9,11 +9,11 @@ let icon = 'X'
 const toggle = () => {
     if ( icon === 'X') {
         icon ='O';
-        message.innerHTML = "<p>Nought's turn</p>";
+        message.innerHTML = "<h2>Nought's turn</h2>";
     }
     else {
         icon = 'X';
-        message.innerHTML = "<p>Cross's turn</p>";
+        message.innerHTML = "<h2>Cross's turn</h2>";
     }
 }
 
@@ -26,3 +26,18 @@ boxes.forEach( (el) => {el.addEventListener('click',
         }
     });
 });
+
+
+const resetBoard = () => {
+    boxes.forEach(
+        (el) =>{
+            el.innerHTML = '';
+        }
+    )
+    restartHighlight();
+    icon='X';
+    message.innerHTML = `<h2>Crosses start</h2>`;
+    winCode = null;
+}
+
+restart.addEventListener('click',resetBoard)
