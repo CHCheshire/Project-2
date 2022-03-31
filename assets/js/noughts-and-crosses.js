@@ -2,7 +2,8 @@
 
 const message = document.querySelector('.message');
 const boxes = document.querySelectorAll('.box');
-const restart = document.querySelector('button');
+const restart = document.querySelector('.restart');
+const aiOptions = [0,1,2,3,4,5,6,7,8]
 
 let icon = 'X'
 
@@ -28,9 +29,9 @@ boxes.forEach( (el) => {el.addEventListener('click',
 });
 
 
-const resetBoard = () => {
+const restartBoard = () => {
     boxes.forEach(
-        (el) =>{
+        (el) => {
             el.innerHTML = '';
         }
     )
@@ -40,13 +41,12 @@ const resetBoard = () => {
     winCode = null;
 }
 
-restart.addEventListener('click',resetBoard)
+restart.addEventListener('click', restartBoard)
 
 
 const checkForWinner = () => { 
     let xArray =[];
     let oArray =[];
-
     boxes.forEach(
         (box) => {
             if (box.textContent) {
@@ -62,13 +62,15 @@ const checkForWinner = () => {
 
     if (xArray.length >= 3 && compareToWinningArrays(xArray)) {
         return declareWinner("Crosses");
+        crossesScore();
     } else if
         (oArray.length >= 3 && compareToWinningArrays(oArray)) {
-            return declareWinner("Noughts");
+        return declareWinner("Noughts");
+        noughtsScore();
     } else if
         (xArray.length + oArray.length === 9) {
-            return declareWinner("Nobody");
-        }
+        return declareWinner("Nobody");
+    }
 }
 
 let winCode = null;
@@ -124,5 +126,17 @@ const restartHighlight = () => {
             box.style.background = "white";
         }
     );
+
+}
+
+function crossesScore() {
+    let oldcrossesScore = parseInt(document.getElementById("c-count").innerText);
+    document.getElementById("c-count").innerText = ++oldcrossesScore;
+
+} 
+
+function noughtScore() {
+    let oldnoughtsScore = parseInt(document.getElementById("n-count").innerText);
+    document.getElementById("n-count").innerText = ++oldnoughtsScore;
 
 }

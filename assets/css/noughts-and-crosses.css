@@ -41,8 +41,9 @@ button {
     font-size:15px;
     padding: 10px 20px;
     border-radius: 10px;
-    margin-top: 50px;
-    font-family: 'Red Hat Mono', monospace;
+    margin-top: 20px;
+    font-family: 'Red Hat Mono', monospace; 
+    width:150px;
 }
 
 button:active {
@@ -61,4 +62,19 @@ footer {
 
 footer a {
     color:blue;
+}
+
+.game-mode {
+    margin-bottom: 30px;
+}
+
+.score {
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.c-count,.n-count {
+    text-align:center;
+    margin-top: 10px;
 }
