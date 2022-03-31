@@ -61,15 +61,15 @@ const checkForWinner = () => {
     );
 
     if (xArray.length >= 3 && compareToWinningArrays(xArray)) {
-        return declareWinner("Crosses");
         crossesScore();
+        declareWinner("Crosses");
     } else if
         (oArray.length >= 3 && compareToWinningArrays(oArray)) {
-        return declareWinner("Noughts");
-        noughtsScore();
+        noughtScore();
+        declareWinner("Noughts");
     } else if
         (xArray.length + oArray.length === 9) {
-        return declareWinner("Nobody");
+        declareWinner("Nobody");
     }
 }
 
@@ -105,7 +105,7 @@ const winningArrays =[
 [2,4,6]] 
 
 
-const declareWinner = (win) => {
+function declareWinner(win) {
     message.innerHTML = `<h2>${win} wins!</h2>`;
     highlight();
 }
@@ -137,6 +137,5 @@ function crossesScore() {
 
 function noughtScore() {
     let oldnoughtsScore = parseInt(document.getElementById("n-count").innerText);
-    document.getElementById("n-count").innerText = ++oldnoughtsScore;
-
+    document.getElementById("n-count").innerText = ++oldnoughtsScore; 
 }
