@@ -65,7 +65,7 @@ h1 {
     }
 }
 
-.footer {
+footer {
     left: 0;
     bottom: 0;
     width: 100%;
@@ -74,6 +74,6 @@ h1 {
     padding-top: 50px;
   }
 
-.footer a {
+footer a {
     color:blue;
 }

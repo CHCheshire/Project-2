@@ -3,9 +3,10 @@
 const message = document.querySelector('.message');
 const boxes = document.querySelectorAll('.box');
 const restart = document.querySelector('.restart');
-const aiOptions = [0,1,2,3,4,5,6,7,8]
 
 let icon = 'X'
+
+/* This is the section for differentiating who's turn it is*/ 
 
 const toggle = () => {
     if ( icon === 'X') {
@@ -18,6 +19,8 @@ const toggle = () => {
     }
 }
 
+/*This will produce the respective icon in the box when a player clicks on it*/ 
+
 boxes.forEach( (el) => {el.addEventListener('click',
     () => {
         if ( !el.innerHTML ) {
@@ -28,6 +31,7 @@ boxes.forEach( (el) => {el.addEventListener('click',
     });
 });
 
+/*This will reset the board when the "restart the game" button is clicked*/ 
 
 const restartBoard = () => {
     boxes.forEach(
@@ -43,7 +47,8 @@ const restartBoard = () => {
 
 restart.addEventListener('click', restartBoard)
 
-
+/*This will compare the current gamestate to the winning arrays
+If one player gets three in a row, the game will compare that to the winningArrays and declare a winner */ 
 const checkForWinner = () => { 
     let xArray =[];
     let oArray =[];
@@ -75,6 +80,7 @@ const checkForWinner = () => {
 
 let winCode = null;
 
+/*After every turn, this checks for a winning combination*/ 
 
 const compareToWinningArrays = (playerArray) => {
     let final = false;
@@ -94,6 +100,8 @@ const compareToWinningArrays = (playerArray) => {
     if (final) return true;
 }
 
+/*This is a list of all the different winning combinations*/ 
+
 const winningArrays =[
 [0,1,2],
 [3,4,5],
@@ -104,11 +112,14 @@ const winningArrays =[
 [0,4,8],
 [2,4,6]] 
 
+/*This will declare a winner in the messages box at the top of the screen*/
 
 function declareWinner(win) {
     message.innerHTML = `<h2>${win} wins!</h2>`;
     highlight();
 }
+
+/*This highlights the winning combination*/ 
 
 const highlight = () => {
     if (winCode) {
@@ -120,6 +131,8 @@ const highlight = () => {
     }
 }
 
+/*This clears the highlights on the board when the game is reset*/ 
+
 const restartHighlight = () => {
     boxes.forEach(
         (box) => {
@@ -128,6 +141,9 @@ const restartHighlight = () => {
     );
 
 }
+
+/*These are the functions for increasing the score for when one of the players wins*/ 
+
 
 function crossesScore() {
     let oldcrossesScore = parseInt(document.getElementById("c-count").innerText);
