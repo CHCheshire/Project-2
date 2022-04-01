@@ -44,6 +44,9 @@ So the script for the game essentially works like this; the players click on a s
 
 A fair amount of testing came from how to implement the scoreboard for the game. I knew it needed to be triggered during the declareWinner secion of the script and originally tried having variables at the top of the script, crossesScore and noughtsScore. I then tried calling on these within the declareWinner section with the intent on adding to them using ++ to add one to the variable to show a win. This initially didn't work due to me not coding it properly but was a flawed way of doing it for two reasons; it was a lengthy bit of code to add in the if statement and also I returning the declareWinner statement which can cause issues for any code after it. When something is returned in a loop or function in javascript, any code after becomes unreachable and thus unable to run. This in some cases can be resolved by placing the return statement at the end of the code however I wanted to tidy up the code so instead got rid of the variables and code to add the score and made them into seperate functions, crossesScore and noughtScore. These when called add 1 to their respective score. However the problem still remains with returning the declareWinner statement as that messes up the process, even if I put it after the score function. So to resolve this I also made the declareWinner statement into a function and changed checkForWinner statement accordingly as well so that it would call for both and add to the score when that person won. 
 
+
+
+
 ### Validator Testing 
 
 - HTML

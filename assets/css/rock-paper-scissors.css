@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+    font-family: montserrat;
+}
+
+
+.game-area {
+    height:300px; 
+    width:300px;
+}
+
+.option {
+    background:lightblue;
+    font-size:15px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: 'Red Hat Mono', monospace; 
+    width:150px;
+}
+
+.option:active {
+    background:lightgreen;
+}
