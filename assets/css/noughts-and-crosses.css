@@ -4,50 +4,50 @@ body {
     max-width: 400px;
     text-align: center;
     margin: 0 auto;
-    background-color:rgb(223, 227, 236);
+    background-color: rgb(223, 227, 236);
 }
 
 
 body h1 {
-        text-align: center;
-        text-decoration: underline;
-        font-size: 40px;
-        font-family: montserrat;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+    font-family: montserrat;
 }
 
 .grid {
-    width:238px;
-    background:lightsteelblue;
+    width: 238px;
+    background: lightsteelblue;
     padding: 10px;
-    border-radius:10px;
-    display:flex;
-    flex-flow:row wrap;
-    margin:auto;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
 }
 
 .box {
     min-width: 75px;
     min-height: 75px;
-    display:inline-block;
+    display: inline-block;
     border: 2px solid lightsteelblue;
-    background:white;
-    border-radius:5px;
-    margin:0;
+    background: white;
+    border-radius: 5px;
+    margin: 0;
     padding: 0;
 }
 
 button {
-    background:lightblue;
-    font-size:15px;
+    background: lightblue;
+    font-size: 15px;
     padding: 10px 20px;
     border-radius: 10px;
     margin-top: 20px;
-    font-family: 'Red Hat Mono', monospace; 
-    width:150px;
+    font-family: 'Red Hat Mono', monospace;
+    width: 150px;
 }
 
 button:active {
-    background:lightgreen;
+    background: lightgreen;
 }
 
 
@@ -55,13 +55,14 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    color:  black;
+    color: black;
     text-align: center;
     padding-top: 50px;
-  }
+    margin-bottom: 2em;
+}
 
 footer a {
-    color:blue;
+    color: blue;
 }
 
 .game-mode {
@@ -69,12 +70,17 @@ footer a {
 }
 
 .score {
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
     text-align: center;
 }
 
-#c-count,#n-count {
-    text-align:center;
+#c-count,
+#n-count {
+    text-align: center;
     margin-top: 10px;
+}
+
+.box.disabled {
+    pointer-events: none;
 }

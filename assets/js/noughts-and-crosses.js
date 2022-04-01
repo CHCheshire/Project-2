@@ -34,11 +34,11 @@ boxes.forEach( (el) => {el.addEventListener('click',
 /*This will reset the board when the "restart the game" button is clicked*/ 
 
 const restartBoard = () => {
-    boxes.forEach(
-        (el) => {
-            el.innerHTML = '';
-        }
-    )
+    boxes.forEach(box => {
+        box.innerHTML = '';
+        box.disabled = false;
+        box.classList.remove("disabled");
+    });
     restartHighlight();
     icon='X';
     message.innerHTML = `<h2>Crosses start</h2>`;
@@ -115,9 +115,15 @@ const winningArrays =[
 /*This will declare a winner in the messages box at the top of the screen*/
 
 function declareWinner(win) {
+    boxes.forEach(box => {
+        box.disabled = true;
+        box.classList.add("disabled");
+    });
     message.innerHTML = `<h2>${win} wins!</h2>`;
     highlight();
 }
+
+
 
 /*This highlights the winning combination*/ 
 
