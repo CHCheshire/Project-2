@@ -33,22 +33,22 @@ h1 {
     height:400px;
     width: 350px;
     border:2px solid black; 
+    margin-bottom: 15px;
 }
 
-
-.button1 {
-    width: 100px; 
-    height: 50px;
+.button {
+    background:lightblue;
+    font-size:15px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: 'Red Hat Mono', monospace; 
+    border:solid 2px; 
+    border-color: black;
 }
 
-.button2 {
-    width: 100px; 
-    height: 50px;
-}
-
-.button3 {
-    width: 100px; 
-    height: 50px;
+.button:active {
+    background:lightgreen;
 }
 
 @media (max-width: 1200px) {
