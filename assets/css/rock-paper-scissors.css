@@ -6,12 +6,19 @@ h1 {
 }
 
 
-.game-area {
+#game-area {
     height:300px; 
     width:300px;
+    text-align: center;
+    display: flex;
 }
 
-.option {
+
+#game-options {
+    text-align: center; 
+}
+
+button {
     background:lightblue;
     font-size:15px;
     padding: 10px 20px;
@@ -21,6 +28,6 @@ h1 {
     width:150px;
 }
 
-.option:active {
+button:active {
     background:lightgreen;
 }
