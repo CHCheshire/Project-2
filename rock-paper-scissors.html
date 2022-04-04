@@ -8,14 +8,28 @@
 <body>
     <h1>Rock, Paper, Scissors</h1>
     <div id="game-area">
-        <p id="playerchoice">Placeholder</p>
-        <p id="computerchoice">Placeholder</p>
+        <h2 class="playerChoice">Placeholder</h2>
+        <h2 class="computerChoice">Placeholder</h2>
     </div>
 
-    <div id="game-options">
-        <button class="option" id="rock">Rock</button>
-        <button class="option" id="paper">Paper</button>
-        <button class="option" id="scissors">Scissors</button>
+    <div class="options">
+        <button class="rock">Rock</button>
+        <button class="paper">Paper</button>
+        <button class="scissors">Scissors</button>
+    </div>
+
+    <div class="score">
+        <div class="playerScore">
+            <h2>Player Score</h2>
+            <p ID="p-count">0</p>
+        </div>
+        
+        <div class="computerScore">
+            <h2>Computer Score</h2>
+            <p ID="c-count">0</p>
+        </div>
     </div>
 </body>
+
+<script src="assets/js/rock-paper-scissors.js"></script>
 </html>
