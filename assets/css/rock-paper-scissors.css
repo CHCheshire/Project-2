@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap');
 
+
+body {
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(223, 227, 236);
+}
+
+
 h1 {
     text-align: center;
     text-decoration: underline;
@@ -17,7 +26,7 @@ h1 {
 }
 
 
-.options {
+.game-options {
     text-align: center; 
 }
 
