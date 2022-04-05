@@ -57,6 +57,31 @@ There is a link in the top left hand corner of the noughts and crosses and rock,
 
 ![Back to home page](documentation/home-navigation.PNG)
 
+-__Rock, paper, Scissors__ 
+
+This is the page for rock, paper, scissors, it consists of a game area where the computer and player choices are displayed, the options for the player to make their choice, a message section above the game area that displays the result from the game. There is also a scoreboard at the bottom of the page to show the score of the player and the computer.
+
+-__Rock, paper, Scissors: Message box__
+
+This displays a message above the game that will show the outcome of the game: either the player or computer wins or the game ends in a draw.
+
+![Rock, paper, Scissors: Message](documentation/r-p-s-message.PNG)
+
+-__Rock, paper, Scissors: Game area__
+
+This is where the options that the player and the computer chose for the game are displayed. 
+
+-__Rock, paper, Scissors: Player options__
+
+Here is where the player can select which option they want to select for that round of the game. When an option is selected, the game will start and the option the player and computer will be displayed. These options are compared and a result for the game is decided based upon these options. 
+
+![Rock, paper, Scissors: Player options](documentation/r-p-s-player-options.PNG) 
+
+-__Rock, paper, Scissors: Scoreboard__ 
+
+This is the scoreboard for Rock, paper, Scissors. Whenever a winner is declared, their respective score will increase by one.
+
+![Rock, paper, Scissors: Scoreboard](documentation/r-p-s-scoreboard.PNG)
 
 ## Testing 
 
