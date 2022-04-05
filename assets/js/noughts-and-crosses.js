@@ -24,7 +24,7 @@ const toggle = () => {
 boxes.forEach( (el) => {el.addEventListener('click',
     () => {
         if ( !el.innerHTML ) {
-            el.innerHTML = `<h1>${icon}</h1>`;
+            el.innerHTML = `<h3>${icon}</h3>`;
             toggle();
             checkForWinner();
         }

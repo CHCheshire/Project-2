@@ -17,6 +17,11 @@ body h1 {
     font-family: montserrat;
 }
 
+h3 {
+    font-size: 28px;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
 .grid {
     width: 238px;
     background: lightsteelblue;
