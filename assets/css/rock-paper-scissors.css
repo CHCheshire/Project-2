@@ -2,10 +2,14 @@
 
 
 body {
+    background-color: rgb(223, 227, 236);
+}
+
+
+.game {
     max-width: 400px;
     text-align: center;
     margin: 0 auto;
-    background-color: rgb(223, 227, 236);
 }
 
 
@@ -55,4 +59,25 @@ button:active {
 #p-count {
     text-align: center;
     margin-top: 10px;
+}
+
+.home {
+    padding: 20px;
+    font-size: 18px;
+    float:left;
+}
+
+@media (max-width: 750px){
+    h1 {
+        font-size: 24px;
+    }
+
+    .home {
+        font-size:15px;
+        padding:10px;
+    }
+
+    h2 {
+        font-size:18px;
+    }
 }

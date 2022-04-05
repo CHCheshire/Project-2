@@ -53,8 +53,8 @@ h1 {
 
 @media (max-width: 1200px) {
     .image {
-        height:250px;
-        width:250px;
+        height:350px;
+        width:350px;
     }
 }
 @media (max-width:850px) {
