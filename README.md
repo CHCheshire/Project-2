@@ -25,7 +25,24 @@ This is a website where I will host two games; Noughts and Crosses and Checkers.
 
 This is the page for Noughts and Crosses, the players play N&C and their score for how many games each player has won. There is a button at the bottom of the page to restart the game and also one to reset the score as well. 
 
+-__Noughts and Crosses: Message box__ 
 
+On the noughts and crosses page, there is a message box just above the game area. This is to let players know who's turn it is and the eventual outcome of the game, with either player winning or a draw is called.
+
+
+
+-__Noughts and Crosses: Game Area__
+
+This is the area on the noughts and crosses page where the game itself is played. It's a 3x3 grid where players will click on each box and, once clicked on, that players icon will be placed into that box. Whenever a player places an icon down, two things trigger: The game checks for a winning combination (i.e. 3 in a row) and, if it can't find one, will swap to the other players turn. If the game finds a winning combination, those boxes will behighlighted and all of the boxes will be disabled. A winner is declared and their respective score increases by one as well. 
+
+-__Noughts and Crosses: Scoreboard__ 
+
+Here on the noughts and crosses page is a scoreboard to let the players know how many game each player has won. The scores will increase by one when the respective player wins a game.
+
+
+-__Noughts and Crosses: Restart the game button__ 
+
+This a button that will allow the players to restart the game: This will clear the board and revert the game back to Crosses turn, just like they were starting a fresh game.
 
 
 ## Testing 
