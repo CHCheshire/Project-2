@@ -160,3 +160,59 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 
 
 
+
+
+
+```js
+if (playerChoice == "rock") {
+    if (computerChoice == "scissors") {
+        playerOption.innerText = `Rock`;
+        computerOption.innerText = `scissors`;
+        message.innerText = `Player wins!`;
+        playerScore();
+    } else if (computerChoice == "paper") {
+        playerOption.innerText = `Rock`;
+        computerOption.innerText = `Paper`;
+        message.innerText = `Computer wins!`;
+        computerScore();
+    } else {
+        playerOption.innerText = `Rock`;
+        computerOption.innerText = `Rock`;
+        message.innerText = `It's a draw!`;
+    }
+}
+if (playerChoice == "paper") {
+    if (computerChoice == "rock") {
+        playerOption.innerText = `Paper`;
+        computerOption.innerText = `Rock`;
+        message.innerText = `Player wins!`;
+        playerScore();
+    } else if (computerChoice == "scissors") {
+        playerOption.innerText = `Paper`;
+        computerOption.innerText = `Scissors`;
+        message.innerText = `Computer wins!`;
+        computerScore();
+    } else {
+        playerOption.innerText = `Paper`;
+        computerOption.innerText = `Paper`;
+        message.innerText = `It's a draw!`;
+    }
+}
+if (playerChoice == "scissors") {
+    if (computerChoice == "paper") {
+        playerOption.innerText = 'Scissors';
+        computerOption.innerText = `Paper`;
+        message.innerText = 'Player Wins!'
+        playerScore();
+    } else if (computerChoice == "rock") {
+        playerOption.innerText = `Scissors`;
+        computerOption.innerText = `Rock`;
+        message.innerText = `Computer wins!`;
+        computerScore();
+    } else {
+        playerOption.innerText = `Scissors`
+        computerOption.innerText = `Scissors`
+        message.innerText = `It's a draw!`
+    }
+}
+```

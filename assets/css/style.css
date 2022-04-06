@@ -31,7 +31,7 @@ h1 {
 
 .image {
     height:400px;
-    width: 350px;
+    width: 400px;
     border:2px solid black; 
     margin-bottom: 15px;
 }
@@ -63,6 +63,10 @@ h1 {
         justify-content: center;
         align-items: center;
     }
+    .image {
+        height:300px;
+        width:300px;
+    }
 }
 
 footer {
@@ -75,5 +79,5 @@ footer {
   }
 
 footer a {
-    color:blue;
+    color:yellow;
 }
