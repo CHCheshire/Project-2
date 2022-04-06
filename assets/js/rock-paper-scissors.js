@@ -1,47 +1,23 @@
 /* jshint esversion: 8 */
-const paperButton = document.getElementsByClassName('.paper');
-const scissorButton = document.getElementsByClassName('.scissors');
+const rockBtn = document.getElementById('rock');
+const paperBtn = document.getElementById('paper');
+const scissorBtn = document.getElementById('scissor');
+const playerOptions = [rockBtn,paperBtn,scissorBtn];
+const computerOptions = ['rock','paper','scissors']
 
 
-function computerPlay () {
 
-    var computerChoice = Math.ceil(Math.random()*3); 
+playerOptions.forEach(option => {
+    option.addEventListener('click',function(){
+        const choiceNumber = Math.floor(Math.random()*3);
+        const computerChoice = computerOptions[choiceNumber];
+        game(playerChoice, computerChoice);
+    })
+})
 
-    if (computerChoice < 1) {
-        computerChoice ="rock";
-    } else if (1 <= computerChoice <= 2) {
-        computerChoice = "paper";
-    } else { 
-        computerChoice = "scissors"
-    }
-}
-
-function rockChoice () {
-    playerChoice = "rock";
-    computerPlay();
-    game();
-}
-
-let rockBtn = document.getElementById('rock');
-rockBtn.addEventListener('click', rockChoice);
-
-// var playerChoice = () => {
-//     if (rockButton.addEventListener("click")) {
-//     playerChoice = "rock";
-//     computerPlay();
-//     game();
-//     } else if (paperButton.addEventListener("click")) {
-//         playerChoice = "paper";
-//         computerPlay();
-//         game();
-//     } else (scissorButton.addEventListener("click"))
-//         playerChoice= "scissors";
-//         computerPlay();
-//         game();
-// }
 
 function game(playerChoice, computerChoice){
-
+    
     
         //Check for Rock
         if (playerChoice === "rock") {  
