@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap');
 
 body {
-    background-color: rgb(223, 227, 236);
+    background-color:lightsteelblue; 
 }
 
 .game {
@@ -24,7 +24,7 @@ h3 {
 
 .grid {
     width: 238px;
-    background: lightsteelblue;
+    background:#0096ff;
     padding: 10px;
     border-radius: 10px;
     display: flex;
@@ -36,7 +36,7 @@ h3 {
     min-width: 75px;
     min-height: 75px;
     display: inline-block;
-    border: 2px solid lightsteelblue;
+    border: 2px solid #0096ff;;
     background: white;
     border-radius: 5px;
     margin: 0;
@@ -44,7 +44,7 @@ h3 {
 }
 
 button {
-    background: lightblue;
+    background-color:lightblue;
     font-size: 15px;
     padding: 10px 20px;
     border-radius: 10px;
@@ -93,9 +93,17 @@ footer a {
 }
 
 .home {
-    padding: 20px;
+    padding: 10px;
     font-size: 18px;
     float:left;
+    font-family: 'Bebas Neue', cursive; 
+    border: solid black; 
+    background-color:lightblue;
+    border-radius: 10px;
+}
+
+.home:active {
+    background-color: lightgreen;
 }
 
 

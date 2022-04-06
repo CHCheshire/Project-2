@@ -1,5 +1,5 @@
 body {
-    background-color:rgb(223, 227, 236);
+    background-color:lightsteelblue; 
 }
 
 h1 {
@@ -37,12 +37,12 @@ h1 {
 }
 
 .button {
-    background:lightblue;
+    background:#0096ff;
     font-size:15px;
     padding: 10px 20px;
     border-radius: 10px;
     margin-top: 20px;
-    font-family: 'Red Hat Mono', monospace; 
+    font-family: 'Bebas Neue', cursive; 
     border:solid 2px; 
     border-color: black;
 }
@@ -79,5 +79,5 @@ footer {
   }
 
 footer a {
-    color:yellow;
+    color:blue;
 }
