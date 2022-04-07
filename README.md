@@ -3,7 +3,7 @@
 This is a website where I will host two games; Noughts and Crosses and Rock, paper, Scissors. These have been made in Javascript and will track the scores at the bottom for both of these games. These will be two player games for each one, with a home page to navigate between each one.
  
 
-![Two Classic Games](documentation/homepage.PNG)
+![Two Classic Games](documentation/homepage.png)
 
 ## Features 
 
@@ -13,49 +13,49 @@ This is a website where I will host two games; Noughts and Crosses and Rock, pap
 
 There is a navigation bar the homepage that will allow the user to navigate between the two games.
 
-![Navigation bar between games](documentation/game-navigation.PNG)
+![Navigation bar between games](documentation/game-navigation.png)
 
 - __The home page__
 
  The home page is where the user can navigate between the two games and also has links to my linkedin and github in the footer as well.
 
-![Home page](documentation/homepage.PNG)
+![Home page](documentation/homepage.png)
 
 - __Noughts and Crosses__
 
 This is the page for Noughts and Crosses, the players play N&C and their score for how many games each player has won. There is a button at the bottom of the page to restart the game and also one to reset the score as well. 
 
-![Noughts and Crosses](documentation/n-and-c.PNG)
+![Noughts and Crosses](documentation/n-and-c.png)
 
 -__Noughts and Crosses: Message box__ 
 
 On the noughts and crosses page, there is a message box just above the game area. This is to let players know who's turn it is and the eventual outcome of the game, with either player winning or a draw is called.
 
-![Noughts and Crosses Message](documentation/n-and-c-message.PNG)
+![Noughts and Crosses Message](documentation/n-and-c-message.png)
 
 -__Noughts and Crosses: Game Area__
 
 This is the area on the noughts and crosses page where the game itself is played. It's a 3x3 grid where players will click on each box and, once clicked on, that players icon will be placed into that box. Whenever a player places an icon down, two things trigger: The game checks for a winning combination (i.e. 3 in a row) and, if it can't find one, will swap to the other players turn. If the game finds a winning combination, those boxes will behighlighted and all of the boxes will be disabled. A winner is declared and their respective score increases by one as well. 
 
-![Noughts and Crosses Game Area](documentation/n-and-c-game-area.PNG)
+![Noughts and Crosses Game Area](documentation/n-and-c-game-area.png)
 
 -__Noughts and Crosses: Scoreboard__ 
 
 Here on the noughts and crosses page is a scoreboard to let the players know how many game each player has won. The scores will increase by one when the respective player wins a game.
 
-![Noughts and Crosses Scoreboard](documentation/n-and-c-scoreboard.PNG)
+![Noughts and Crosses Scoreboard](documentation/n-and-c-scoreboard.png)
 
 -__Noughts and Crosses: Restart the game button__ 
 
 This a button that will allow the players to restart the game: This will clear the board and revert the game back to Crosses turn, just like they were starting a fresh game.
 
-![Noughts and Crosses Restart button](documentation/n-and-c-restart.PNG)
+![Noughts and Crosses Restart button](documentation/n-and-c-restart.png)
 
 -__Navigation back to the home page__
 
 There is a link in the top left hand corner of the noughts and crosses and rock, paper, scissors page that will allow the user to navigate back to the home page.
 
-![Back to home page](documentation/home-navigation.PNG)
+![Back to home page](documentation/home-navigation.png)
 
 -__Rock, paper, Scissors__ 
 
@@ -65,32 +65,40 @@ This is the page for rock, paper, scissors, it consists of a game area where the
 
 This displays a message above the game that will show the outcome of the game: either the player or computer wins or the game ends in a draw.
 
-![Rock, paper, Scissors: Message](documentation/r-p-s-message.PNG)
+![Rock, paper, Scissors: Message](documentation/r-p-s-message.png)
 
 -__Rock, paper, Scissors: Game area__
 
-This is where the options that the player and the computer chose for the game are displayed. 
+This is where the options that the player and the computer chose for the game are displayed. The player options will appear on the left and the computer options will appear on the right, 
+
+![Rock, paper, scissors: game area](documentation/r-p-s-game-area.png)
 
 -__Rock, paper, Scissors: Player options__
 
 Here is where the player can select which option they want to select for that round of the game. When an option is selected, the game will start and the option the player and computer will be displayed. These options are compared and a result for the game is decided based upon these options. 
 
-![Rock, paper, Scissors: Player options](documentation/r-p-s-player-options.PNG) 
+![Rock, paper, Scissors: Player options](documentation/r-p-s-player-options.png) 
 
 -__Rock, paper, Scissors: Scoreboard__ 
 
 This is the scoreboard for Rock, paper, Scissors. Whenever a winner is declared, their respective score will increase by one.
 
-![Rock, paper, Scissors: Scoreboard](documentation/r-p-s-scoreboard.PNG)
+![Rock, paper, Scissors: Scoreboard](documentation/r-p-s-scoreboard.png)
+
+-__Rock, paper, scissors: home page navigation__
+
+This is the button on the rock, paper, scissors page that allows the user to navigate back to the home page. 
+
+![Rock, paper, scissors: home page navigate](documentation/home-navigation.png)
 
 ## Testing 
 
 The purpose of this project was to create a home page with seperate pages for multiple games, Nought and Crosses and Rock, paper, Scissors. I orginally wanted Connect Four instead of Rock, paper, Scissors however, when looking over the examples for this, most examples either used advanced Javascript or where just out of the scope of the project. So I had instead opted for Rock, paper, Scissors as this was more achievable given my experience in Javascript and the scope of the project. For the home page, I have added some media queries due to the size of the pictures and the layout of the page. So at 1200px the images will shrink down to 350px in height and width so they can fit on the page. I orginally just made them thinner but this made the images stretch so I shrunk them in height as well. At 800px I also made it so that the options go from a flex display to a block display so that they take up less width on the screen. I also made the images slightly smaller at this width to better for the size. 
 
-![Home page at normal size](documentation/homepage.PNG)
-![Home page at 1200px](documentation/homepage-1200px.PNG)
-![Home page at 800px](documentation/homepage-800px.PNG)
-![Stretched images on the homepage](documentation/image-stretch.PNG)
+![Home page at normal size](documentation/homepage.png)
+![Home page at 1200px](documentation/homepage-1200px.png)
+![Home page at 800px](documentation/homepage-800px.png)
+![Stretched images on the homepage](documentation/image-stretch.png)
 
 
 For the Noughts and Crosses game, there was a fair bit of testing I needed to do with for this especially regards to the javascript. I made the game and all it's features rather thin; There's not much that's needed on the screen for the game so I made sure to make it quite thin and centred so that I wouldn't need to worry about whether the screen was a phone, tablet or computer screen. I have a fairly large monitor and the game is big enough and doesn't look odd with the unused space on the sides to me and shrinks down for thinner screens easily enough as well. 
@@ -99,8 +107,8 @@ So when I made this game I orginally intended on having the choice of playing ag
 
 Now for the actual game itself, I researched various different ways to make the game and most iterations of the game where made using other forms of coding languages/stuff outside the scope of the project such as using Python and JQuery. I eventually found a way to make it using purely javascript and used that as a guideline for my code, where I would style it in my own way and also add to it as well with my own features. The first part was making the grid itself, I have the "grid" div in HTML that refers to the actual playing space itself with each div within that representing one of the nine boxes in Noughts and Crosses. This was then styled in css to show that on screen; The grid is a width of 238px simply due to the background being even at that width, any more and it protrudes on the right hand side so I played around with the width until I was happy with 238px. So after styling it I then proceeded to start coding it for the actual functionality of the game. 
 
-![Game area grid at 238px](documentation/grid-238px.PNG)
-![Game area grid at 245px to show stretching](documentation/grid-245px.PNG)
+![Game area grid at 238px](documentation/grid-238px.png)
+![Game area grid at 245px to show stretching](documentation/grid-245px.png)
 
 For the styling of the games, I originally had it that there were two messages at the top, one stating who's turn it was and that crosses would start. However I streamlined this down to only one message as it looked a little odd to me having the "Crosses start" message the entire way through the game. So now the "Crosses start" message gets replaced with who's turn it is and the outcome of the game, declaring a winner or a draw. 
 
@@ -130,37 +138,41 @@ So I first tried to remedy this by adding this.innerText to when the game functi
 
 For both of the games, I also added a navigation button in the top left hand corner so that the user can easily navigate back to the home page as well. Otherwise, without this, their isn't a way for them to navigate to the home page within the website. 
 
+I have also checked whether all these games work within Chrome, Edge and Firefox. I can confirm that my website work on all of these browsers with no mechanical issues with the games or and no visual issues as well.
 
+![Chrome](documentation/chrome.png)
+![Edge](documentation/edge.png)
+![Firefox](documentation/firefox.png)
 
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fchcheshire.github.io%2FProject-1-Warhammer%2F)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fchcheshire.github.io%2FProject-2%2F)
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fchcheshire.github.io%2FProject-2&usermedium=all&vextwarning=&warning=1)
 
 ### Unfixed Bugs
 
-
+I do not have any unfixed bugs within my code. All errors that appeared in the code that were addressed in the testing section have been fixed at the point of submitting this project. 
 
 ## Deployment
 
 The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the [GitHub repository](https://github.com/CHCheshire/Project-1-Warhammer), navigate to the Settings tab 
+  - In the [GitHub repository](https://github.com/CHCheshire/Project-2), navigate to the Settings tab 
   - From the source section drop-down menu, select the **Main** Branch, then click "Save".
   - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found [here](https://chcheshire.github.io/Project-1-Warhammer/)
+The live link can be found [here](https://chcheshire.github.io/Project-2)
 
 ### Local Deployment
 
 In order to make a local copy of this project, you can clone it. In your IDE Terminal, type the following command to clone my repository:
 
-- `git clone https://github.com/CHCheshire/Project-1-Warhammer.git`
+- `git clone https://github.com/CHCheshire/Project-2.git`
 
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/CHCheshire/Project-1-Warhammer)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/CHCheshire/Project-2)
 
 
 ## Credits 
@@ -171,61 +183,3 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 ### Media
 
 
-
-
-
-
-
-```js
-if (playerChoice == "rock") {
-    if (computerChoice == "scissors") {
-        playerOption.innerText = `Rock`;
-        computerOption.innerText = `scissors`;
-        message.innerText = `Player wins!`;
-        playerScore();
-    } else if (computerChoice == "paper") {
-        playerOption.innerText = `Rock`;
-        computerOption.innerText = `Paper`;
-        message.innerText = `Computer wins!`;
-        computerScore();
-    } else {
-        playerOption.innerText = `Rock`;
-        computerOption.innerText = `Rock`;
-        message.innerText = `It's a draw!`;
-    }
-}
-if (playerChoice == "paper") {
-    if (computerChoice == "rock") {
-        playerOption.innerText = `Paper`;
-        computerOption.innerText = `Rock`;
-        message.innerText = `Player wins!`;
-        playerScore();
-    } else if (computerChoice == "scissors") {
-        playerOption.innerText = `Paper`;
-        computerOption.innerText = `Scissors`;
-        message.innerText = `Computer wins!`;
-        computerScore();
-    } else {
-        playerOption.innerText = `Paper`;
-        computerOption.innerText = `Paper`;
-        message.innerText = `It's a draw!`;
-    }
-}
-if (playerChoice == "scissors") {
-    if (computerChoice == "paper") {
-        playerOption.innerText = 'Scissors';
-        computerOption.innerText = `Paper`;
-        message.innerText = 'Player Wins!'
-        playerScore();
-    } else if (computerChoice == "rock") {
-        playerOption.innerText = `Scissors`;
-        computerOption.innerText = `Rock`;
-        message.innerText = `Computer wins!`;
-        computerScore();
-    } else {
-        playerOption.innerText = `Scissors`
-        computerOption.innerText = `Scissors`
-        message.innerText = `It's a draw!`
-    }
-}
-```
