@@ -179,7 +179,14 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 
 ### Content 
 
+The logic used for making the noughts and crosses game was taken from another github project made by developess (https://github.com/developess/Noughts-and-Crosses) 
+
+The logic used for calculating the score system used on the noughts and crosses game was taken from this video by Media Upload (https://www.youtube.com/watch?v=9sPrhBoTmSk) 
+
+The logic used for creating the function that calculates the computerOption and playerOption in the rock, paper, scissors game was taken from this article by GeeksforGeeks (https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/)
 
 ### Media
 
+rps.png was found on the towardsdatascience website (https://miro.medium.com/max/800/1*8du96SQUQ0NlWmWvVu20Zw.png)
 
+nac.png was found on the fine arts america website (https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/tic-tac-toe-noughts-and-crosses-game-elena-sysoeva.jpg)
