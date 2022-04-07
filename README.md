@@ -137,7 +137,7 @@ For both of the games, I also added a navigation button in the top left hand cor
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fchcheshire.github.io%2FProject-1-Warhammer%2F)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fchcheshire.github.io%2FProject-1-Warhammer%2F)
+  - No errors were found when passing through the official [(Jigsaw) validator](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fchcheshire.github.io%2FProject-2&usermedium=all&vextwarning=&warning=1)
 
 ### Unfixed Bugs
 
