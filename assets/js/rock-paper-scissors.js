@@ -9,6 +9,11 @@ const computerOption = document.querySelector('.computerOption');
 const message = document.querySelector('.message');
 
 
+// This is the function for taking the player choice and determining the computers choice and is triggered when a player clicks one the player options
+// The computer's choice is decided by using math.floor and math.random to randomly choose between rock, paper, scissors 
+// Then both the playerChoice and computerChoice are taken and the game function starts to run
+
+
 playerOptions.forEach(option => {
     option.addEventListener('click', function () {
         playerChoice = this.id;
@@ -18,6 +23,7 @@ playerOptions.forEach(option => {
     });
 });
 
+// This is the function for deciding the outcome and winner of the game
 
 function game(playerChoice, computerChoice) {
     // compare player vs computer choices
@@ -76,6 +82,8 @@ function game(playerChoice, computerChoice) {
     playerOption.innerText = playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1);
     computerOption.innerText = computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1);
 }
+
+// These two functions will run when either the computer or player win and will add on to their respective scores
 
 function playerScore() {
     let pCount = document.getElementById("p-count");

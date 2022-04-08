@@ -5,7 +5,7 @@ body {
     background-color:lightsteelblue; 
 }
 
-
+/* Game section styling */
 .game {
     max-width: 400px;
     text-align: center;
@@ -20,6 +20,7 @@ h1 {
     font-family: montserrat;
 }
 
+/* Message styling */
 
 .message {
     font-size: 24px; 
@@ -30,6 +31,8 @@ h1 {
     font-size: 24px; 
     font-family: sans-serif;
 }
+
+/* Game area and player option styling */
 
 #game-area {
     height:200px; 
@@ -43,6 +46,8 @@ h1 {
 .option {
     text-align: center; 
 }
+
+/* Button styling */
 
 button {
     background:lightblue;
@@ -58,6 +63,7 @@ button:active {
     background:lightgreen;
 }
 
+/* Scoreboard styling */
 
 .score {
     display: flex;
@@ -71,6 +77,8 @@ button:active {
     margin-top: 10px;
 }
 
+/* Home button styling */
+
 .home {
     padding: 10px;
     font-size: 15px;
@@ -80,6 +88,10 @@ button:active {
     background-color:lightblue;
     border-radius: 10px;
 }
+
+
+/* Media query at 600px width */
+
 @media (max-width: 600px){
     h1 {
         font-size: 24px;
