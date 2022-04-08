@@ -3,10 +3,11 @@ const rockBtn = document.getElementById('rock');
 const paperBtn = document.getElementById('paper');
 const scissorBtn = document.getElementById('scissors');
 const playerOptions = [rockBtn, paperBtn, scissorBtn];
-const computerOptions = ['rock', 'paper', 'scissors']
+const computerOptions = ['rock', 'paper', 'scissors'];
 const playerOption = document.querySelector('.playerOption');
 const computerOption = document.querySelector('.computerOption');
 const message = document.querySelector('.message');
+let playerChoice;
 
 
 // This is the function for taking the player choice and determining the computers choice and is triggered when a player clicks one the player options
@@ -69,11 +70,11 @@ function game(playerChoice, computerChoice) {
                     computerScore();
                     break;
                 case "paper":
-                    message.innerText = 'Player Wins!'
+                    message.innerText = 'Player Wins!';
                     playerScore();
                     break;
                 case "scissors":
-                    message.innerText = `It's a draw!`
+                    message.innerText = `It's a draw!`;
                     break;
             }
             break;

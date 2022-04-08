@@ -163,7 +163,24 @@ I have also checked whether all these games work within Chrome, Edge and Firefox
   - No errors were found when passing through the official [(Jigsaw) validator](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fchcheshire.github.io%2FProject-2&usermedium=all&vextwarning=&warning=1) 
   [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fchcheshire.github.io%2FProject-2%2Fnoughts-and-crosses.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
   [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fchcheshire.github.io%2FProject-2%2Frock-paper-scissors.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- JavaScript
+  - No errors found when passing through the official [JShint validator]
+    -rock-paper-scissors.js
+      -There are 5 functions in this file.
 
+      -Function with the largest signature take 2 arguments, while the median is 0.
+
+      -Largest function has 4 statements in it, while the median is 3.
+
+      -The most complex function has a cyclomatic complexity value of 13 while the median is 1.
+    -noughts-and-crosses.js
+      -There are 16 functions in this file.
+
+      -Function with the largest signature take 1 arguments, while the median is 0.5.
+
+      -Largest function has 9 statements in it, while the median is 3.
+
+      -The most complex function has a cyclomatic complexity value of 6 while the median is 1.
 
 ### Unfixed Bugs
 
@@ -193,13 +210,15 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 
 ### Content 
 
-The logic used for making the noughts and crosses game was taken from another github project made by developess (https://github.com/developess/Noughts-and-Crosses) 
+The logic used for making the noughts and crosses game was taken from another github project made by developess. I had used their javascript for determining a winner, displaying who's turn it is, showing the icons in the box and being able to restart the game. To try expand upon that, I had added the scoreboard system, streamlined the code slightly and also added that boxes should be disabled after a winner is declared. (https://github.com/developess/Noughts-and-Crosses) 
 
 The logic used for calculating the score system used on the noughts and crosses game was taken from this video by Media Upload (https://www.youtube.com/watch?v=9sPrhBoTmSk) 
 
 The logic used for creating the function that calculates the computerOption and playerOption in the rock, paper, scissors game was taken from this article by GeeksforGeeks (https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/) 
 
 The article I read that is describing the Minimax AI for noughts and crosses (https://gsurma.medium.com/tic-tac-toe-creating-unbeatable-ai-with-minimax-algorithm-8af9e52c1e7d)
+
+The arrow icon used for the "Back to home page" buttons on the game pages was taken from Font Awesome (https://fontawesome.com/)
 
 ### Media
 

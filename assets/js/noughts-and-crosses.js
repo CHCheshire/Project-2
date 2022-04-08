@@ -1,10 +1,14 @@
 /* jshint esversion: 8 */
 
+/*Certain portions of this code, although altered to fit what I wanted for this project, where taken from another project by developess on github, https://github.com/developess/Noughts-and-Crosses
+The reason for this was that I was struggling to find a solely javascript version of noughts and crosses as others used Python or Jquery.*/
+
+
 const message = document.querySelector('.message');
 const boxes = document.querySelectorAll('.box');
 const restart = document.querySelector('.restart');
 
-let icon = 'X'
+let icon = 'X';
 
 /* This is the section for differentiating who's turn it is*/ 
 
@@ -17,7 +21,7 @@ const toggle = () => {
         icon = 'X';
         message.innerHTML = "<h2>Cross's turn</h2>";
     }
-}
+};
 
 /*This will produce the respective icon in the box when a player clicks on it*/ 
 
@@ -41,11 +45,11 @@ const restartBoard = () => {
     });
     restartHighlight();
     icon='X';
-    message.innerHTML = `<h2>Crosses start</h2>`;
+    message.innerHTML = `<h2>Crosses starts</h2>`;
     winCode = null;
-}
+};
 
-restart.addEventListener('click', restartBoard)
+restart.addEventListener('click', restartBoard);
 
 /*This will compare the current gamestate to the winning arrays
 If one player gets three in a row, the game will compare that to the winningArrays and declare a winner */ 
@@ -76,7 +80,7 @@ const checkForWinner = () => {
         (xArray.length + oArray.length === 9) {
         declareWinner("Nobody");
     }
-}
+};
 
 let winCode = null;
 
@@ -89,16 +93,16 @@ const compareToWinningArrays = (playerArray) => {
             let outcome = true;
             for(let i = 0; i < 3; i++) {
                 if (playerArray.indexOf(combo[i]) == -1)
-                    return outcome = false;
+                    outcome = false;
             }
             if (outcome) {
                 winCode = combo;
-                return final = true;
+                final = true;
             }
         }
-    )
+    );
     if (final) return true;
-}
+};
 
 /*This is a list of all the different winning combinations*/ 
 
@@ -110,7 +114,7 @@ const winningArrays =[
 [1,4,7],
 [2,5,8],
 [0,4,8],
-[2,4,6]] 
+[2,4,6]];
 
 /*This will declare a winner in the messages box at the top of the screen*/
 
@@ -135,7 +139,7 @@ const highlight = () => {
             el.style.background = "lightgreen";
         }
     }
-}
+};
 
 /*This clears the highlights on the board when the game is reset*/ 
 
@@ -146,7 +150,7 @@ const restartHighlight = () => {
         }
     );
 
-}
+};
 
 /*These are the functions for increasing the score for when one of the players wins*/ 
 
