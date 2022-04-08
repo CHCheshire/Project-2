@@ -101,9 +101,11 @@ The purpose of this project was to create a home page with seperate pages for mu
 ![Stretched images on the homepage](documentation/image-stretch.png)
 
 
-For the Noughts and Crosses game, there was a fair bit of testing I needed to do with for this especially regards to the javascript. I made the game and all it's features rather thin; There's not much that's needed on the screen for the game so I made sure to make it quite thin and centred so that I wouldn't need to worry about whether the screen was a phone, tablet or computer screen. I have a fairly large monitor and the game is big enough and doesn't look odd with the unused space on the sides to me and shrinks down for thinner screens easily enough as well. 
+For the Noughts and Crosses game, there was a fair bit of testing I needed to do with for this especially regards to the javascript. I made the game and all it's features rather thin; This made it easier to scale for playing the game on smaller games. So I didn't need to do too much in terms of scaling however I did need to make the title and home page button smaller at lower screen widths due them being squished. So I lowered the font size of the home page button and title to 15px and 24px respectively and reduced the padding as well. 
 
-So when I made this game I orginally intended on having the choice of playing against AI or a player however in the end I opted to have it so that it was only playable against another player. This was due to how you can program the 'AI' for these games and, from what I could see online and through my research, there were only two viable ways I could do this; Either the computer chooses at random or they follow a specific algorithm/set of decisions when making their move and neither of these I particularly liked. I originally intended for random however this led to a rather unsatisfying playing experience; the AI could be a move away from winning and just selects a square that wasn't relevant and lose because of it. It just seemed a little wrong to me so I decided against that for the AI and instead looked to more structured AI which has the opposite problem; it's way too good at the game. From my research online, the other way to program the AI for this is called "MinMax" whereby it will select moves that maximise the chance of winning whilst minimising the chance of losing. I have played against this myself to test it out and it leads to only being able to at best draw as noughts and being able to win as crosses by playing the same moves every game as it can't change its strategy so to speak. These seemed to be the only viable ways I could see and think of myself to make an AI. A potential 'fix' to this could of been to have a function in place at the start of each game to randomly decide between the two personalities so to speak, to make the AI feel a bit different each time. But again I opted against this as these two are so far apart in difficultly that it would've been jarring to play against each time. So ulitmately after all that, I decided to keep the game as player vs player as this seemed more appropriate for this type of game due to limitations in the AI that i had. 
+![Noughts and Crosses at 600px](/documentation/n-and-c-600px.png)
+
+So when I made this game I orginally intended on having the choice of playing against AI or a player however in the end I opted to have it so that it was only playable against another player. This was due to how you can program the 'AI' for these games and, from what I could see online and through my research, there were only two viable ways I could do this; Either the computer chooses at random or they follow a specific algorithm/set of decisions when making their move and neither of these I particularly liked. I originally intended for random however this led to a rather unsatisfying playing experience; the AI could be a move away from winning and just selects a square that wasn't relevant and lose because of it. It just seemed a little wrong to me so I decided against that for the AI and instead looked to more structured AI which has the opposite problem; it's way too good at the game. From my research online, the other way to program the AI for this is called "MinMax" whereby it will select moves that maximise the chance of winning whilst minimising the chance of losing. I have played against this myself to test it out and it leads to only being able to at best draw as noughts and being able to win as crosses by playing the same moves every game as it can't change its strategy so to speak. These seemed to be the only viable ways I could see and think of myself to make an AI. A potential 'fix' to this could of been to have a function in place at the start of each game to randomly decide between the two personalities so to speak, to make the AI feel a bit different each time. But again I opted against this as these two are so far apart in difficulty that it would've been jarring to play against each time. So ulitmately after all that, I decided to keep the game as player vs player as this seemed more appropriate for this type of game due to limitations in the AI that I had. 
 
 Now for the actual game itself, I researched various different ways to make the game and most iterations of the game where made using other forms of coding languages/stuff outside the scope of the project such as using Python and JQuery. I eventually found a way to make it using purely javascript and used that as a guideline for my code, where I would style it in my own way and also add to it as well with my own features. The first part was making the grid itself, I have the "grid" div in HTML that refers to the actual playing space itself with each div within that representing one of the nine boxes in Noughts and Crosses. This was then styled in css to show that on screen; The grid is a width of 238px simply due to the background being even at that width, any more and it protrudes on the right hand side so I played around with the width until I was happy with 238px. So after styling it I then proceeded to start coding it for the actual functionality of the game. 
 
@@ -136,7 +138,14 @@ The playerOptions function originally worked as follows: when an option was clic
 
 So I first tried to remedy this by adding this.innerText to when the game function i.e. game(this.innerText, computerChoice). This wasn't running the code though so I instead added playerChoice = this.id to the function which assigned a value to playerChoice, specifically the one the player chose. This was also added to be called with the game function so that both were called when the game was to run thus it could properly assign a value for the player rather duplicating the computers choice. After this was resolved, the rest of the game ran smoothly and now displays a winner or a draw and the respective score increases with every win as well. 
 
+I also added a media query for the rock, paper, scissors game which was very similar to the noughts and crosses one: The home page button and title were squishing at lower screen widths so I lowered them. I also lowered the font size for some of the text within the game area as well as they looked a little big compared to the other smaller text sizes on the screen so lowering that too kept it all more in line with one another. 
+
+![Rock, paper, scissors at 600px](documentation/r-p-s-600px.png)
+
+
 For both of the games, I also added a navigation button in the top left hand corner so that the user can easily navigate back to the home page as well. Otherwise, without this, their isn't a way for them to navigate to the home page within the website. 
+
+![Home page navigation button](documentation/home-navigation.png)
 
 I have also checked whether all these games work within Chrome, Edge and Firefox. I can confirm that my website work on all of these browsers with no mechanical issues with the games or and no visual issues as well.
 
@@ -148,8 +157,13 @@ I have also checked whether all these games work within Chrome, Edge and Firefox
 
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fchcheshire.github.io%2FProject-2%2F)
+    [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fchcheshire.github.io%2FProject-2%2Frock-paper-scissors.html) 
+    [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fchcheshire.github.io%2FProject-2%2Fnoughts-and-crosses.html)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fchcheshire.github.io%2FProject-2&usermedium=all&vextwarning=&warning=1)
+  - No errors were found when passing through the official [(Jigsaw) validator](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fchcheshire.github.io%2FProject-2&usermedium=all&vextwarning=&warning=1) 
+  [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fchcheshire.github.io%2FProject-2%2Fnoughts-and-crosses.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fchcheshire.github.io%2FProject-2%2Frock-paper-scissors.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
 
 ### Unfixed Bugs
 
@@ -183,7 +197,9 @@ The logic used for making the noughts and crosses game was taken from another gi
 
 The logic used for calculating the score system used on the noughts and crosses game was taken from this video by Media Upload (https://www.youtube.com/watch?v=9sPrhBoTmSk) 
 
-The logic used for creating the function that calculates the computerOption and playerOption in the rock, paper, scissors game was taken from this article by GeeksforGeeks (https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/)
+The logic used for creating the function that calculates the computerOption and playerOption in the rock, paper, scissors game was taken from this article by GeeksforGeeks (https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/) 
+
+The article I read that is describing the Minimax AI for noughts and crosses (https://gsurma.medium.com/tic-tac-toe-creating-unbeatable-ai-with-minimax-algorithm-8af9e52c1e7d)
 
 ### Media
 
